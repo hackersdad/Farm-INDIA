@@ -7,6 +7,7 @@ body
 a
 {
   text-decoration: none;
+  color: inherit;
 }
 a:hover
 {
@@ -28,13 +29,13 @@ nav
 }
 .contents
 {
-  width: 80%;
+  width: 100%;
   max-width: 1170px;
   margin: 0 auto;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
-  padding: 1rem 1.5rem;
+  padding: 0rem 1.5rem;
 }
 .cart
 {
@@ -173,7 +174,7 @@ header
 
 /* ---------------End of Products ---------------- */
 /* --------------- Cart ---------------- */
-.cart-overlay {
+.overlay {
   position: fixed;
   top: 0;
   right: 0;
@@ -184,7 +185,12 @@ header
   z-index: 2;
   visibility: hidden;
 }
+.visible
+{
+  visibility: visible;
+}
 .cart {
+  left: 550px;
   position: fixed;
   top: 0;
   right: 0;
@@ -198,10 +204,7 @@ header
   transform: translateX(100%);
 }
 .showCart {
-  transform: translateX(0);
-}
-.transparentBcg {
-  visibility: visible;
+  transform: translateX(0%);
 }
 @media screen and (min-width: 768px) {
   .cart {
@@ -211,7 +214,8 @@ header
 }
 
 .close-cart {
-  font-size: 1.7rem;
+  left:0;
+  font-size: 1rem;
   cursor: pointer;
 }
 .cart h2 {

@@ -1,10 +1,10 @@
 <div class="banner">
   <h1 class="banner-title">Fresh Vegetable collection</h1>
-  <button class="banner-btn" >Shop Now</button>
+  <button class="banner-btn" onclick="document.getElementById('purchase').scrollIntoView()">Shop Now</button>
 </div>
 </header>
 <!-- products -->
-<section class="products">
+<section class="products" id='purchase'>
   <div class="section-title">
     <h2>Our products</h2>
   </div>
@@ -13,9 +13,8 @@
     <article class="product">
       <div class="img-container">
         <img src="images/potato.jpg" alt="product" class="product-img"><!--Image by Couleur from Pixabay-->
-        <button class="bag-btn" data-id="6ffWs3vA5LwLWxTlTM7kos">
-          <i class="fas fa-shopping-cart"></i>
-          add to bag
+        <button class="bag-btn" >
+          <span>add to bag<img src="images/cart.png" alt="cart" height="25px" width="25px"></span>
         </button>
       </div>
       <h3>Potato</h3>
@@ -26,13 +25,13 @@
    </section>
    <!-- end of products -->
    <!-- cart -->
-   <div class="cart-overlay">
+   <div class="overlay">
       <div class="cart">
-        <span class="close-cart"><i class="far fa-window-close"></i></span>
+        <span class="close-cart" onclick="closeCart()">close</span>
         <h2>your cart</h2>
         <div class="cart-content">
           <!-- cart item -->
-           --&gt;
+
           <!-- cart item -->
         </div>
         <div class="cart-footer">
