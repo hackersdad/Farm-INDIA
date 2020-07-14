@@ -14,6 +14,13 @@ a:hover
   background: rgb(231, 226, 221);
   color: orange;
 }
+#login
+{
+  background-color: rgba(255, 255, 255, 0.4);
+  width : 50vw;
+  height: 50vh;
+  padding:0.5vw;
+}
 nav
 {
   position: sticky;
@@ -211,6 +218,7 @@ header
     width: 30vw;
     min-width: 450px;
   }
+
 }
 
 .close-cart {
