@@ -26,10 +26,10 @@ Individual table have the following fields:
 	* name
 	* UserName
 	* email
-	* contact number
+	* contact_number
 	* postal_address
 	* role - whether customer/ trader/ staff or farmer
-	* passsword
+	* password
 	* feedback_id - id from feedback
 	* complaint - id from complaint
 	* banking_details //details yet to be decided
@@ -92,4 +92,4 @@ Individual table have the following fields:
 	* transaction_id - id from transaction
 	* amount
 	* text - text to be imprinted in invoice
-	//rest details are dependent on cart 
+	//rest details are dependent on cart

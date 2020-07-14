@@ -8,7 +8,8 @@ include 'header.html';
   <input type="text" name="userName" placeholder="Username"><br>
   <input type="email" name="E-mail" placeholder="E-mail"><br>
   <input type="password" name="pwd" placeholder="password"><br>
-  <button type="submit" name="login">Log in</button>
+  <button type="submit" name="login">Log in</button><br>
+  <span style="color: black;font-size: 20px">Or <a href="Signup.php">Signup</a> </span>
 </form>
 </header>
 <?php include 'Footer.html'?>
