@@ -11,7 +11,7 @@ a
 }
 a:hover
 {
-  background: rgb(231, 226, 221);
+  background: inherit;
   color: orange;
 }
 #login
@@ -20,6 +20,18 @@ a:hover
   width : 50vw;
   height: 50vh;
   padding:0.5vw;
+}
+.signup
+{
+  background-color: rgba(255, 255, 255, 0.6);
+  color:black;
+  font-style: italic;
+  font-size: 1rem;
+  padding: 1rem;
+}
+.form
+{
+  padding: 0.5rem;
 }
 nav
 {
