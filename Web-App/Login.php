@@ -1,15 +1,28 @@
 <?php
-include 'header.html';
+include 'header.php';
 //include 'inc/login.php';
+if(isset($_COOKIE['cookie']))
+{
+  header('Location:index.php');
+  exit();
+}
 ?>
-<form action="inc/login.php" method="POST" id="login">
+<form action="inc/login.php" method="POST" class="signup">
   <h3 style="color:black">Log in!</h3>
-  <span style="color: black;font-size: 20px"> Fill Username or email and password</span><br>
-  <input type="text" name="userName" placeholder="Username"><br>
-  <input type="email" name="E-mail" placeholder="E-mail"><br>
-  <input type="password" name="pwd" placeholder="password"><br>
-  <button type="submit" name="login">Log in</button><br>
-  <span style="color: black;font-size: 20px">Or <a href="Signup.php">Signup</a> </span>
+  <table>
+    <tr>
+      <td>E-mail</td>
+      <td><input type="email" name="E-mail" placeholder="E-mail" required></td>
+    </tr>
+    <tr>
+      <td>Password</td>
+      <td><input type="password" name="pwd" placeholder="password"required></td>
+    </tr>
+    <tr>
+      <td><button type="submit" name="login">Log in</button><br></td>
+      <td><span style="color: black;font-size: 20px">Or <a href="Signup.php">Signup</a> </span></td>
+    </tr>
+  </table>
 </form>
 </header>
 <?php include 'Footer.html'?>

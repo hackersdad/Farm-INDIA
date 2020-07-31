@@ -1,8 +1,6 @@
 <?php
-include "header.html";
-include 'inc/db.inc.php';
-include "mid.html";
-?>
-<?php
-include 'Footer.html';
+include_once 'inc/db.inc.php';
+include_once "header.php";
+include_once "mid.php";
+include_once 'Footer.html';
 ?>
